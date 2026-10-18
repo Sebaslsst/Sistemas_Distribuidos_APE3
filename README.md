@@ -9,11 +9,9 @@ Requiere Java 25 (LTS) y Maven 3.9 o posterior.
 En terminales separadas:
 
 ```bash
-cd ejercicio-1 && mvn spring-boot:run
-cd ejercicio-2 && mvn spring-boot:run
-cd ejercicio-3 && mvn spring-boot:run
-cd ejercicio-4 && mvn spring-boot:run
-cd ejercicio-5 && mvn spring-boot:run
+Los servicios del backend
+for dir in ejercicio-1 ejercicio-2 ejercicio-3 ejercicio-4 ejercicio-5; do (cd "$dir" && mvn spring-boot:run) & done; wait
+Y para el frontend
 cd frontend && npm install && npm run dev
 ```
 
